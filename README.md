@@ -27,8 +27,4 @@ MVVM:
 * ViewModels
 * Views
 
-## Запуск
-
-dotnet build
-dotnet run
 
