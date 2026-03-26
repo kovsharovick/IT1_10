@@ -1,0 +1,26 @@
+<Window x:Class="RealNumberApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:RealNumberApp.ViewModels"
+        Title="RealNumber" Height="300" Width="400">
+
+    <Window.DataContext>
+        <vm:MainViewModel/>
+    </Window.DataContext>
+
+    <StackPanel Margin="20">
+
+        <TextBox Text="{Binding AValue}" Margin="0 5"/>
+        <TextBox Text="{Binding BValue}" Margin="0 5"/>
+
+        <WrapPanel Margin="0 10">
+            <Button Content="+" Command="{Binding AddCommand}" Width="50"/>
+            <Button Content="-" Command="{Binding SubCommand}" Width="50"/>
+            <Button Content="*" Command="{Binding MulCommand}" Width="50"/>
+            <Button Content="/" Command="{Binding DivCommand}" Width="50"/>
+        </WrapPanel>
+
+        <TextBlock Text="{Binding Result}" FontSize="16"/>
+
+    </StackPanel>
+</Window>
