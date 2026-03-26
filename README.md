@@ -32,6 +32,3 @@ MVVM:
 dotnet build
 dotnet run
 
-## Автор
-
-(твое имя)
